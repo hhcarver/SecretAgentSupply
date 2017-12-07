@@ -6,11 +6,13 @@ body {
   font-family: Helvetica;
 }
 
+/*HEADER LINE*/
 #header {
   background-color: black;
   color: white;
   display: flex;
   align-items: center;
+  /*Need to push everything over a tad when page is large.*/
 }
 #header img {
   margin-left: 0.5rem;
@@ -19,4 +21,29 @@ body {
 }
 #header p {
   margin: 0.66rem 0;
+}
+
+/*NEW-ARRIVAL SECTION*/
+#new-arrival {
+  background-image: url("../images/mainbackground.jpeg");
+  height: 25rem;
+  /*Need to adjust for width when website changes.*/
+}
+#new-arrival .text-box {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  width: 20rem;
+  position: relative;
+  top: 9rem;
+}
+#new-arrival .text-box h3 {
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+#new-arrival .text-box h1 {
+  font-size: 2rem;
+  padding-top: 0.25rem;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
 }
