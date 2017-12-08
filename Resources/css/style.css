@@ -4,7 +4,9 @@ html {
 
 body {
   font-family: Helvetica;
+  color: white;
 }
+
 
 /*HEADER LINE*/
 #header {
@@ -46,4 +48,15 @@ body {
   padding-top: 0.25rem;
   padding-left: 3rem;
   padding-bottom: 2rem;
+}
+
+/*NAV BAR*/
+nav {
+  background-color: firebrick;
+  display: flex;
+  justify-content: space-between;
+  /*Need to adjust for width, and have it wrap or something!*/
+}
+nav p {
+  padding: 0.75rem 0;
 }
