@@ -88,3 +88,36 @@ nav p {
   background-color: black;
   padding: 0.5rem 0;
 }
+
+/*INFORMATION SECTION*/
+#information {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 4rem;
+}
+#information .top {
+  background-color: black;
+  padding: 1rem 2rem;
+}
+.numbers {
+  color: black;
+  background-color: white;
+}
+#location, #hours {
+  width: 35%;
+}
+
+/*FOOTER*/
+footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: left;
+  background-color: black;
+  display: flex;
+}
+footer p {
+  display: flex;
+  align-items: center;
+}
