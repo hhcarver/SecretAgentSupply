@@ -55,10 +55,19 @@ nav {
   background-color: firebrick;
   display: flex;
   justify-content: space-between;
-  /*Need to adjust for width, and have it wrap or something!*/
 }
 nav p {
   padding: 0.75rem 0.5rem;
+}
+/*BACKUP NAV BAR*/
+#backup-nav {
+  background-color: firebrick;
+  display: flex;
+  justify-content: center;
+}
+#backup-nav p {
+  padding: 0.75rem 0.5rem;
+  color: white;
 }
 
 /*PRODUCTS SECTION*/
@@ -72,6 +81,7 @@ nav p {
   border: 4px solid black;
   text-align: center;
   width: 30%;
+  min-width: 18rem;
   display: flex;
   flex-direction: column;
   /*Boxes shouldn't be moving*/
@@ -79,7 +89,7 @@ nav p {
 .item img {
   max-height: 9rem;
   width: auto;
-  padding: 2rem 0;
+  padding: 2rem 4rem;
   display: flex;
   justify-content: center;
   /*images are super distorted*/
@@ -120,4 +130,26 @@ footer {
 footer p {
   display: flex;
   align-items: center;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (min-width: 1024px) {
+  #backup-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  nav {
+    display: none;
+  }
+  #glasses {
+    display: none;
+  }
+  .item {
+    width: 47%;
+  }
+  #location, #hours {
+    width: 35%;
+  }
 }
